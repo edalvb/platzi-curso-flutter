@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'home_trips.dart';
-import 'search_trips.dart';
-import 'profile_trips.dart';
+import 'Place/ui/screens/home_trips.dart';
+import 'Place/ui/screens/search_trips.dart';
+import 'User/ui/screens/profile_trips.dart';
 
 class PlatziTripsCupertino extends StatelessWidget {
   @override
@@ -12,11 +12,11 @@ class PlatziTripsCupertino extends StatelessWidget {
       bottomNavigationBar: CupertinoTabScaffold(
         tabBar: CupertinoTabBar(items: [
           BottomNavigationBarItem(
-              icon: Icon(Icons.home, color: Colors.indigo), title: Text("")),
+              icon: Icon(Icons.home, color: Colors.indigo), label: ""),
           BottomNavigationBarItem(
-              icon: Icon(Icons.search, color: Colors.indigo), title: Text("")),
+              icon: Icon(Icons.search, color: Colors.indigo), label: ""),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person, color: Colors.indigo), title: Text("")),
+              icon: Icon(Icons.person, color: Colors.indigo), label: ""),
         ]),
         tabBuilder: (BuildContext context, int index) {
           switch (index) {
